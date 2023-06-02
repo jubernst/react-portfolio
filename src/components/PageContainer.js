@@ -26,22 +26,24 @@ const myProjects = [
   },
   {
     id: 3,
-    title: "Text Editor",
+    title: "Social API",
     git_url: "",
     page_url: "",
-    description: "",
+    description:
+      "Backend routes and models for a social media network. Made with Mongoose and Express.",
   },
 ];
 
 export default function PageContainer() {
   const [currentPage, setCurrentPage] = useState("Home");
 
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+  // Check to see what the value of `currentPage` is and render as needed
   const renderPage = () => {
     if (currentPage === "Contact") {
       return <ContactForm />;
     }
     if (currentPage === "Portfolio") {
+      // Pass projects the Portfolio to render
       return <Portfolio projects={myProjects} />;
     }
     return <About />;
@@ -51,9 +53,7 @@ export default function PageContainer() {
 
   return (
     <div className="body">
-      {/* We are passing the currentPage from state and the function to update it */}
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
       <Footer />
     </div>
