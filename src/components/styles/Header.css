@@ -1,0 +1,33 @@
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fefae0;
+  background-color: #606c38;
+}
+
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+.header ul {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-size: 24px;
+  list-style-type: none;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.nav-link {
+  color: #dda15e;
+}
+
+.nav-link-active {
+  color: #fefae0;
+}

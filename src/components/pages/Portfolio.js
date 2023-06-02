@@ -3,10 +3,10 @@ import ProjectItem from "./ProjectItem";
 
 // Display projects
 const Portfolio = ({ projects }) => {
-  const renderCards = projects.map((project) => {
+  const renderProjects = projects.map((project) => {
     return <ProjectItem key={project.id} project={project} />;
   });
-  return <div className="project row">{renderCards}</div>;
+  return <div className="project row">{renderProjects}</div>;
 };
 
 export default Portfolio;
