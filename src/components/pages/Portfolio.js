@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-// import projects
 
+// Display projects
 const Portfolio = ({ projects }) => {
   const renderCards = projects.map((project) => {
     return <ProjectItem key={project.id} project={project} />;

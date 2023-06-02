@@ -1,7 +1,6 @@
 import React from "react";
-// Contact should have info and a form to fill out
-// Form does not need to work
 
+// Fix contact form
 function ContactForm({ onFormSubmit }) {
   const [info, setInfo] = useState("");
 
